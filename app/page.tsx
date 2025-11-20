@@ -1,24 +1,38 @@
+import Hero from "./components/Hero";
+import HowItWorks from "./components/HowItWorks";
+
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white text-gray-900 px-6 py-16 flex flex-col items-center">
-      <h1 className="text-4xl font-bold mb-6 text-center">NUGA</h1>
+    <main>
+      <Hero />
+      <HowItWorks />
+      {/* ここに追加で content を書ける */}
+      <section id="features" className="py-20 px-4 bg-white text-gray-800">
+        <div className="max-w-6xl mx-auto text-center">
+          <h3 className="text-4xl font-extrabold mb-4 text-[#5e17eb]">
+            NUGAが選ばれる理由
+          </h3>
+          <p className="text-xl text-gray-600 mb-12">
+            あなたの日常を豊かにする、独自の機能をご紹介します。
+          </p>
 
-      <p className="text-lg text-center max-w-xl leading-relaxed mb-10">
-        遊びたい気持ちが重なったときだけ、そっとつながるアプリ。
-        <br />
-        気まずくない、自然に遊べるきっかけをつくります。
-      </p>
-
-      <a
-        href="#"
-        className="bg-black text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-gray-800 transition"
-      >
-        Coming Soon
-      </a>
-
-      <footer className="mt-20 text-sm text-gray-500">
-        © {new Date().getFullYear()} NUGA
-      </footer>
+          <div className="grid md:grid-cols-3 gap-8">
+            <FeatureCard title="ディープコネクション" description="表面的ではなく、価値観が合う親友と深く繋がれます。" />
+            <FeatureCard title="プライベートサークル" description="信頼できる少人数グループで安全に交流できます。" />
+            <FeatureCard title="共通の熱中度" description="熱中度アルゴリズムがあなたに合う相手を見つけます。" />
+          </div>
+        </div>
+      </section>
     </main>
+  );
+}
+
+function FeatureCard({ title, description }: { title: string; description: string }) {
+  return (
+    <div className="p-6 bg-gray-50 rounded-2xl shadow-lg border hover:shadow-xl transition transform hover:-translate-y-1">
+      <div className="text-4xl mb-4 text-[#5e17eb]">✨</div>
+      <h4 className="text-xl font-bold mb-2">{title}</h4>
+      <p className="text-gray-600">{description}</p>
+    </div>
   );
 }
