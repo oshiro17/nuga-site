@@ -1,3 +1,4 @@
+import FullFeatures from "./components/FullFeatures";
 import Hero from "./components/Hero";
 import HowItWorks from "./components/HowItWorks";
 
@@ -6,6 +7,7 @@ export default function Home() {
     <main>
       <Hero />
       <HowItWorks />
+      <FullFeatures /> 
       {/* ここに追加で content を書ける */}
       <section id="features" className="py-20 px-4 bg-white text-gray-800">
         <div className="max-w-6xl mx-auto text-center">
