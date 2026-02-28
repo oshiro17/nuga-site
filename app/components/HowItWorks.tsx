@@ -96,7 +96,13 @@ export default function HowItWorks() {
                 src={matchSuccessImageUrl} 
                 alt="NUGAのマッチング" 
                 className="w-full h-auto object-cover" 
-                onError={(e) => { e.target.onerror = null; e.target.src = 'https://placehold.co/400x500/808080/ffffff?text=Match+Success'; e.target.alt = 'プレースホルダー画像：マッチング成功を喜ぶ人'; }}
+                onError={(e) => {
+                  const img = e.currentTarget;
+                  img.onerror = null;
+                  img.src =
+                    "https://placehold.co/400x500/808080/ffffff?text=Match+Success";
+                  img.alt = "プレースホルダー画像：マッチング成功を喜ぶ人";
+                }}
               />
             </div>
           </div>
