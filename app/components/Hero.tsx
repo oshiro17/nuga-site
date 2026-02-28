@@ -38,7 +38,7 @@ const playStoreBadge = "GetItOnGooglePlay_Badge_Web_color_Japanese.png";
         </h2>
 
       <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center items-center">
-          <a href="https://play.google.com/store/apps/details?id=com.nonokaoshiro.ringring" className="inline-block rounded-xl shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition ring-2 ring-white/50">
+          <a href="https://apps.apple.com/jp/app/nuga-%E7%B4%84%E6%9D%9F%E3%82%A2%E3%83%97%E3%83%AA-%E5%8F%8B%E9%81%94%E3%83%81%E3%83%A3%E3%83%83%E3%83%88/id6754442698" className="inline-block rounded-xl shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition ring-2 ring-white/50">
             <img src={appStoreBadge} className="h-14 md:h-16 object-contain rounded-xl" />
           </a>
 
