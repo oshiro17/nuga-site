@@ -22,7 +22,7 @@ export default function FeatureItemCard({
       hover:shadow-2xl hover:-translate-y-1 transition-all duration-300
     ">
       {/* 画像 */}
-      <div className="relative w-full h-52 overflow-hidden">
+      <div className="relative w-full aspect-[2/1] overflow-hidden">
         <img
           src={imageUrl}
           alt={title}

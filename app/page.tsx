@@ -1,15 +1,17 @@
 import FullFeatures from "./components/FullFeatures";
 import Hero from "./components/Hero";
 import HowItWorks from "./components/HowItWorks";
+import KamishibaiStory from "./components/KamishibaiStory";
 
 export default function Home() {
   return (
     <main>
       <Hero />
       <HowItWorks />
+      <KamishibaiStory />
       <FullFeatures /> 
       {/* ここに追加で content を書ける */}
-      <section id="features" className="py-20 px-4 bg-white text-gray-800">
+      {/* <section id="features" className="py-20 px-4 bg-white text-gray-800">
         <div className="max-w-6xl mx-auto text-center">
           <h3 className="text-4xl font-extrabold mb-4 text-[#5e17eb]">
             NUGAが選ばれる理由
@@ -24,7 +26,7 @@ export default function Home() {
             <FeatureCard title="共通の熱中度" description="熱中度アルゴリズムがあなたに合う相手を見つけます。" />
           </div>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 }

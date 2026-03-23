@@ -1,5 +1,6 @@
 export const FEATURE_IMAGES = {
-  slot: "/girl.png",
+  slot: "/slot.png",
+  wink:"/wink.png",
   anonGroup: "/girl.png",
   simpleMode: "/girl.png",
   phone: "/girl.png",

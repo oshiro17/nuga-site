@@ -20,7 +20,7 @@ export default function FullFeatures() {
       <div className="max-w-7xl mx-auto">
 
         <h3 className="text-4xl md:text-5xl font-extrabold mb-4 text-center">
-          NUGAの全機能一覧
+          NUGAの機能
         </h3>
         <p className="text-xl text-gray-600 mb-12 text-center">
           友達との繋がりを深める多様なツールが揃っています。
@@ -29,81 +29,85 @@ export default function FullFeatures() {
         <div className="grid md:grid-cols-2 gap-8">
 
           <FeatureItemCard
-            title="遊びたいスロット"
-            description="この人と遊びたいけど誘いにくい時に便利。遊びたいスロットを送っておくだけで、相手も同じ時間に遊びたいと思っていた場合のみマッチ成立。断られる心配がありません。"
+            title="スロットマッチング"
+            description="「遊びたい時間」を送るだけで、時間が重なった瞬間に自動マッチ。マッチ成立通知、重複スロット整理、即チャット導線、複数日まとめ送信（最大7日）まで対応。予定調整は、送るだけ。合った瞬間にマッチ。"
+            icon={<IconSmartphone />}
+            imageUrl={FEATURE_IMAGES.slot}
+          />
+
+  
+          <FeatureItemCard
+            title="ウィンクで繋がる"
+            description="学校や街中で“あ、この人とSNSつながりたい”と思っても、いきなりフォローするのはちょっと怖い。
+NUGAなら、まずはウィンク。
+相手もあなたにウィンクしていたときだけ、お互いに通知されてDMが解放されます。
+片方だけのウィンクは相手に知られません。"
+            icon={<IconPhone />}
+            imageUrl={FEATURE_IMAGES.wink}
+          />
+
+          {/* <FeatureItemCard
+            title="濃いチャット体験（1対1・グループ）"
+            description="画像送信、返信、ピン留め、送信取り消し、既読管理、通知連携に対応。画像は期限付き表示で期限後は自動クリーンアップ。雑談から約束まで、1つのトークで完結。"
+            icon={<IconMessageSquare />}
+            imageUrl={FEATURE_IMAGES.slot}
+          />
+
+          <FeatureItemCard
+            title="スタンプ作成機能（画像＋絵文字＋音声）"
+            description="自作スタンプを段階UIで作成し、チャットに即送信。音声付きスタンプの再生まで対応。自分だけのスタンプで、会話がキャラになる。"
+            icon={<IconMessageCircle />}
+            imageUrl={FEATURE_IMAGES.slot}
+          />
+
+          <FeatureItemCard
+            title="シール帳（コレクション）体験"
+            description="シール帳の背景変更、配置ドラッグ、拡大、ページ追加まで対応。集める、並べる、魅せる。あなたのシール帳。"
+            icon={<IconCalendarCheck />}
+            imageUrl={FEATURE_IMAGES.slot}
+          />
+
+          <FeatureItemCard
+            title="シール交換マーケット"
+            description="交換リクエスト作成、承諾/辞退、承諾時の自動移転、通知、公式キャンペーン配布、いいね機能まで実装。欲しいシールは、交渉して手に入れる。"
+            icon={<IconUsers />}
+            imageUrl={FEATURE_IMAGES.slot}
+          />
+
+          <FeatureItemCard
+            title="グループ向け遊び機能"
+            description="日程投票カード、匿名「みんなで遊びたい」カード（過半数で開示）を用意。グループの“遊びたい”を、自然にまとめる。"
+            icon={<IconCalendarCheck />}
+            imageUrl={FEATURE_IMAGES.slot}
+          />
+
+          <FeatureItemCard
+            title="友達追加導線が多い（離脱しにくい）"
+            description="ID検索、QR読み取り/表示、友達の友達、近くのユーザー、友達一覧管理まで対応。つながり方を、1つにしない。"
+            icon={<IconUser />}
+            imageUrl={FEATURE_IMAGES.slot}
+          />
+
+          <FeatureItemCard
+            title="安心・運用機能"
+            description="ブロック/通報、権限ルールによる公開範囲制御、通知トークン清掃、期限データ掃除など保守面を整備。楽しいだけじゃない。安心して使える設計。"
+            icon={<IconBell />}
+            imageUrl={FEATURE_IMAGES.slot}
+          />
+
+          <FeatureItemCard
+            title="しんぷるモード"
+            description="UIを絞ったEasyモードを実装。高機能版が重いユーザーにも対応。迷わず使える、やさしいモード。"
             icon={<IconSmartphone />}
             imageUrl={FEATURE_IMAGES.slot}
           />
 
           <FeatureItemCard
-            title="匿名みんなで遊びたいカード"
-            description="グループチャット内で匿名で『みんなで遊ばない？』を提案できます。賛成が半数を超えると賛成した人だけ公開され、言い出しっぺも自然に含まれる仕組みなので気まずさゼロ。"
-            icon={<IconUsers />}
-            imageUrl={FEATURE_IMAGES.anonGroup}
-          />
-
-          <FeatureItemCard
-            title="しんぷるモード"
-            description="SNSが苦手な人でも安心して使える、シンプルで迷わないチャット専用モード。インストール後すぐに直感的に使い始められます。"
-            icon={<IconSmartphone />}
-            imageUrl={FEATURE_IMAGES.simpleMode}
-          />
-
-          <FeatureItemCard
-            title="電話リクエスト"
-            description="久しぶりに電話したいけど相手の気分が分からない…。そんな時は電話リクエストを送るだけ。相手も『電話したい』気分のときだけマッチする安心設計です。"
-            icon={<IconPhone />}
-            imageUrl={FEATURE_IMAGES.phone}
-          />
-
-          <FeatureItemCard
-            title="友だち探し"
-            description="友だち、友だちの友だち、近くの人を一覧から探せます。地図のレーダー表示で距離感を把握しながら相手を確認し、気になった人はプロフィールからすぐ友だち追加できます。"
-            icon={<IconMap />}
-            imageUrl={FEATURE_IMAGES.map}
-          />
-
-          <FeatureItemCard
-            title="プロフィール"
-            description="名前・一言・SNSリンク・アイコンを自由に編集可能。自分専用のQRコードも表示でき、その場で簡単に友だち追加してもらえます。"
-            icon={<IconUser />}
-            imageUrl={FEATURE_IMAGES.profile}
-          />
-
-          <FeatureItemCard
-            title="1対1チャット"
-            description="2人だけのチャットルームでテキスト・画像送信・既読管理に対応。マッチした相手とは自動でチャットが開くためスムーズに会話がスタートできます。"
-            icon={<IconMessageSquare />}
-            imageUrl={FEATURE_IMAGES.chat1on1}
-          />
-
-          <FeatureItemCard
-            title="グループチャット"
-            description="複数人で会話できるグループトーク。テキスト、返信、画像送信もでき、コミュニケーションを広げられます。"
-            icon={<IconMessageCircle />}
-            imageUrl={FEATURE_IMAGES.groupChat}
-          />
-
-          <FeatureItemCard
-            title="日程調整"
-            description="複数の候補日を出して、誰がどの日に参加できるかを投票できます。結果は見やすい表として表示され、予定決めがスムーズに。"
-            icon={<IconCalendarCheck />}
-            imageUrl={FEATURE_IMAGES.schedule}
-          />
-
-          <FeatureItemCard
-            title="匿名タイムライン"
-            description="ランダムネームで自由につぶやける匿名タイムライン。2列グリッドでサクサク読めて、コメントも匿名で参加可能。通報機能もあり安全設計です。"
+            title="基本基盤（認証・プロフィール・通知）"
+            description="メール認証、パスワード再設定、ID設定、プロフィール編集、SNS連携、プッシュ通知連携を網羅。"
             icon={<IconMessageSquareText />}
-            imageUrl={FEATURE_IMAGES.timeline}
-          />
-
-          <FeatureItemCard
-            title="通知管理"
-            description="通知の許可状況を自動で確認し、通知設定やトークン更新、バッジ消去まで裏側で管理。重要な連絡を見逃さないようサポートします。"
-            icon={<IconBell />}
-            imageUrl={FEATURE_IMAGES.notification}
-          />
+            imageUrl={FEATURE_IMAGES.slot}
+          /> */}
 
         </div>
       </div>
