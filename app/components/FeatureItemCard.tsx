@@ -5,14 +5,14 @@ import React from "react";
 type FeatureItemCardProps = {
   title: string;
   description: string;
-  icon: React.ReactNode;
+  // icon: React.ReactNode;
   imageUrl: string;
 };
 
 export default function FeatureItemCard({
   title,
   description,
-  icon,
+  // icon,
   imageUrl,
 }: FeatureItemCardProps) {
   return (
@@ -38,13 +38,13 @@ export default function FeatureItemCard({
         <div className="absolute inset-0 bg-gradient-to-t from-[#5e17eb]/30 to-transparent" />
 
         {/* アイコンのバッジ */}
-        <div className="
+        {/* <div className="
           absolute top-4 left-4 p-3 rounded-2xl 
           bg-white/30 backdrop-blur-md shadow-md
           text-[#5e17eb] group-hover:scale-110 transition
         ">
           {icon}
-        </div>
+        </div> */}
       </div>
 
       {/* テキスト部分 */}

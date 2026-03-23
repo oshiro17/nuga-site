@@ -29,9 +29,9 @@ export default function FullFeatures() {
         <div className="grid md:grid-cols-2 gap-8">
 
           <FeatureItemCard
-            title="スロットマッチング"
+            title="スロット"
             description="「遊びたい時間」を送るだけで、時間が重なった瞬間に自動マッチ。マッチ成立通知、重複スロット整理、即チャット導線、複数日まとめ送信（最大7日）まで対応。予定調整は、送るだけ。合った瞬間にマッチ。"
-            icon={<IconSmartphone />}
+            // icon={<IconSmartphone />}
             imageUrl={FEATURE_IMAGES.slot}
           />
 
@@ -42,7 +42,7 @@ export default function FullFeatures() {
 NUGAなら、まずはウィンク。
 相手もあなたにウィンクしていたときだけ、お互いに通知されてDMが解放されます。
 片方だけのウィンクは相手に知られません。"
-            icon={<IconPhone />}
+            // icon={<IconPhone />}
             imageUrl={FEATURE_IMAGES.wink}
           />
 
