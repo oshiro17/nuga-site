@@ -7,6 +7,7 @@ type FeatureItemCardProps = {
   description: string;
   // icon: React.ReactNode;
   imageUrl: string;
+  featureFlag?: string;
 };
 
 export default function FeatureItemCard({
@@ -14,6 +15,7 @@ export default function FeatureItemCard({
   description,
   // icon,
   imageUrl,
+  featureFlag,
 }: FeatureItemCardProps) {
   return (
     <div className="
@@ -36,6 +38,18 @@ export default function FeatureItemCard({
 
         {/* うっすら紫のグラデオーバーレイ */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#5e17eb]/30 to-transparent" />
+
+        {featureFlag ? (
+          <div className="absolute top-4 right-3 z-20 rotate-2">
+            <div className="relative inline-flex items-center bg-emerald-500 px-3 py-1.5 text-xs font-bold text-white shadow-lg">
+              {featureFlag}
+              <span
+                aria-hidden="true"
+                className="absolute top-0 -right-3 h-0 w-0 border-y-[14px] border-y-transparent border-l-[12px] border-l-emerald-500"
+              />
+            </div>
+          </div>
+        ) : null}
 
         {/* アイコンのバッジ */}
         {/* <div className="

@@ -1,4 +1,8 @@
 export const FEATURE_IMAGES = {
+  signal:"/signal.png",
+  playTogether:"/playTogether.png",
+  stamp:"/stamp.png",
+  stampc:"/stampc.png",
   slot: "/slot.png",
   wink:"/wink.png",
   anonGroup: "/girl.png",

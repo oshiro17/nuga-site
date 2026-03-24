@@ -30,7 +30,7 @@ export default function FullFeatures() {
 
           <FeatureItemCard
             title="スロット"
-            description="「遊びたい時間」を送るだけで、時間が重なった瞬間に自動マッチ。マッチ成立通知、重複スロット整理、即チャット導線、複数日まとめ送信（最大7日）まで対応。予定調整は、送るだけ。合った瞬間にマッチ。"
+            description="「遊びたい時間」を送るだけで、時間が重なった瞬間に自動マッチ。マッチしないと相手には知られないから、気軽に誘える。予定調整は、送るだけ。合った瞬間にマッチ。"
             // icon={<IconSmartphone />}
             imageUrl={FEATURE_IMAGES.slot}
           />
@@ -46,6 +46,34 @@ NUGAなら、まずはウィンク。
             imageUrl={FEATURE_IMAGES.wink}
           />
 
+          <FeatureItemCard
+  title="シグナルで想いを届ける"
+  description="気になる相手に手紙を送りたい。でも、重いと思われたり、気まずくなったりするのは怖い。
+NUGAのシグナルなら大丈夫。
+ラブレターは、相手もあなたに送っていたときだけお互いに開示され、DMも解放されます。
+片方だけの送信では、内容は相手に表示されず、知られることもありません。
+14日ごとのクールダウンがあるからこそ、本当に届けたい気持ちを大切に送れます。"
+  // icon={<IconPhone />}
+  imageUrl={FEATURE_IMAGES.signal}
+/>
+<FeatureItemCard
+  title="匿名で『みんなで遊びたい』"
+  description="グループチャットで「遊びたい」を匿名で投稿できます。誰が出したかは表示されず、グループの半数以上が賛成したときだけ“賛成したメンバー”が公開されます。（投稿者は公表されません）気まずさゼロで意思表示、幹事なしで自然に予定が決まる新しい仕組みです"
+  // icon={<IconSmartphone />}
+  imageUrl={FEATURE_IMAGES.playTogether}
+  featureFlag="グループチャット"
+/>
+<FeatureItemCard
+            title="オリジナルのスタンプシール作成機能"
+            description="自作スタンプを作成し、チャットで送信。音声付きスタンプの再生まで対応。自分だけのスタンプで、会話がキャラになる。"
+        
+            imageUrl={FEATURE_IMAGES.stamp}
+          />
+<FeatureItemCard
+            title="スタンプシール帳体験"
+            description="スタンプシールの交換ができます！『このスタンプあげるから、これちょうだい？』などリクエストを送れます"
+            imageUrl={FEATURE_IMAGES.stampc}
+          />
           {/* <FeatureItemCard
             title="濃いチャット体験（1対1・グループ）"
             description="画像送信、返信、ピン留め、送信取り消し、既読管理、通知連携に対応。画像は期限付き表示で期限後は自動クリーンアップ。雑談から約束まで、1つのトークで完結。"
